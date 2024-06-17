@@ -15,12 +15,7 @@ namespace ToDoMVC.Controllers
 
 		public IActionResult Index()
 		{
-			return View();
-		}
-
-		public IActionResult Privacy()
-		{
-			return View();
+			return RedirectToAction("All", "Tasks");
 		}
 
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
